@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#79BABA">
+
+  <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/et_emailaddress_id"
+      android:hint="Email adress or phone Number"
+      android:layout_marginTop="97dp"
+      android:layout_marginStart="20dp"
+      android:background="@drawable/email_border"
+      android:padding="3dp"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_password_id"
+        android:hint="Password"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/et_emailaddress_id"
+        android:background="@drawable/password_border"
+        android:padding="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_forgotpassword_id"
+        android:text="Forgot Password?"
+        android:layout_below="@id/et_password_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#073CD7"/>
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bt_login_id"
+    android:text="Login"
+    android:textStyle="bold"
+    android:layout_below="@id/tv_forgotpassword_id"
+    android:layout_marginStart="100dp"
+    android:layout_marginTop="20dp"
+    android:textColor="#0D05FA"
+    android:background="@drawable/login_border"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_sign_up_id"
+        android:text="Sign_up"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_forgotpassword_id"
+        android:layout_toRightOf="@id/bt_login_id"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#0D05FA"
+        android:background="@drawable/login_border"/>
+
+
+
+
+
+
+
+</RelativeLayout>
