@@ -1,5 +1,6 @@
 package com.e.chatme;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,5 +24,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void sign() {
+
+        Intent intent = new Intent(MainActivity.this,SignUpActivity.class);
+        startActivity(intent);
     }
 }
