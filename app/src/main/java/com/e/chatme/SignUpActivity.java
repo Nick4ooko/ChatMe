@@ -16,6 +16,7 @@ public class SignUpActivity extends AppCompatActivity {
 
     private CircleImageView profile;
     private Button btUpload;
+    private Button btCreate;
     private static final int PICK_IMAGE_REQUEST=1;
     private Uri profileUri;
 
@@ -27,7 +28,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         profile =(CircleImageView)findViewById(R.id.profile_image_id);
         profile.setCircleBackgroundColor(android.R.color.white);
-        profile.setBorderColor(android.R.color.holo_blue_bright);
+        profile.setBorderColor(android.R.color.holo_blue_dark);
         profile.setBorderWidth(2);
         profile.setBorderOverlay(true);
         
@@ -38,9 +39,23 @@ public class SignUpActivity extends AppCompatActivity {
                 chooseImage();
             }
         });
-        
+
+        btCreate =(Button)findViewById(R.id.bt_create_id);
+        btCreate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                confirm();
+            }
+        });
         
 
+
+    }
+
+    private void confirm() {
+
+        Intent createIntent = new Intent(SignUpActivity.this,MainActivity.class);
+        startActivity(createIntent);
 
     }
 
